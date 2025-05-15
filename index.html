@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IA Central</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Central de IAs - Scherrer</title>
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #20232a;
+      color: #61dafb;
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+    main {
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #61dafb;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
+      background: white;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    strong {
+      color: #20232a;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #20232a;
+      color: white;
+    }
   </style>
 </head>
-<body class="bg-white text-gray-800">
-  <!-- Cabeçalho -->
-  <header class="bg-blue-700 text-white shadow-md">
-    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">IA Central</h1>
-      <a href="#chatbot" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition">Fale com a IA Central</a>
-    </div>
+<body>
+
+  <header>
+    <img src="logo.png" alt="Logo do site">
+    <h1>Central de Inteligências Artificiais</h1>
+    <p>Descubra as melhores ferramentas de IA organizadas por categoria</p>
   </header>
 
-  <!-- Seção Hero -->
-  <section class="bg-blue-50 py-12">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">Tudo sobre Inteligência Artificial em um só lugar</h2>
-      <p class="text-lg text-gray-600">Descubra as melhores IAs do momento, explicadas de forma simples e direta.</p>
-    </div>
-  </section>
+  <main>
+    <h2>🎨 Criatividade</h2>
+    <ul>
+      <li><strong>Canva Magic Write:</strong> Gerador de textos dentro do Canva, ótimo para ideias e roteiros.</li>
+      <li><strong>Runway ML:</strong> Edição de vídeo automática com IA.</li>
+      <li><strong>Leonardo AI:</strong> Gera imagens artísticas e realistas com inteligência artificial.</li>
+    </ul>
 
-  <!-- Categorias -->
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <h3 class="text-2xl font-bold mb-8">Categorias</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Exemplo de Cartão -->
-      <div class="border rounded-2xl shadow p-6 bg-white">
-        <h4 class="text-xl font-semibold text-blue-700 mb-2">ChatGPT</h4>
-        <p class="text-gray-600 mb-4">IA de texto da OpenAI, ótima para responder perguntas e gerar conteúdos diversos.</p>
-        <a href="https://chat.openai.com" target="_blank" class="text-purple-600 hover:underline font-semibold">Acessar IA</a>
-      </div>
-      <!-- Você pode duplicar esse bloco para adicionar mais IAs -->
-    </div>
-  </section>
+    <h2>✍️ Escrita e Texto</h2>
+    <ul>
+      <li><strong>ChatGPT:</strong> Criação de conteúdo, respostas, ideias, tudo com IA.</li>
+      <li><strong>Jasper AI:</strong> Geração de textos de marketing, blogs, e mais.</li>
+      <li><strong>Copy.ai:</strong> Ferramenta focada em textos publicitários e criativos.</li>
+    </ul>
 
-  <!-- Sobre -->
-  <section class="bg-blue-100 py-12">
-    <div class="max-w-4xl mx-auto text-center">
-      <h3 class="text-2xl font-bold mb-4">Sobre o Projeto</h3>
-      <p class="text-gray-700">A missão do IA Central é tornar ferramentas de inteligência artificial acessíveis e simples para todos. Aqui você encontra ferramentas úteis, explicações diretas e links oficiais.</p>
-    </div>
-  </section>
+    <h2>🎓 Educação</h2>
+    <ul>
+      <li><strong>Khanmigo:</strong> Tutor virtual com IA da Khan Academy.</li>
+      <li><strong>Socratic:</strong> Responde perguntas e explica passo a passo (Google).</li>
+      <li><strong>AskYourPDF:</strong> Faz perguntas sobre PDFs e responde de forma resumida.</li>
+    </ul>
 
-  <!-- Contato -->
-  <section class="max-w-4xl mx-auto px-4 py-12" id="contato">
-    <h3 class="text-2xl font-bold mb-6">Contato</h3>
-    <form class="space-y-4">
-      <input type="text" placeholder="Nome" class="w-full border p-3 rounded" />
-      <input type="email" placeholder="E-mail" class="w-full border p-3 rounded" />
-      <textarea placeholder="Mensagem" class="w-full border p-3 rounded h-32"></textarea>
-      <button type="submit" class="bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-md">Enviar</button>
-    </form>
-  </section>
+    <h2>🧠 Produtividade</h2>
+    <ul>
+      <li><strong>Notion AI:</strong> Ajuda na organização, escrita e tarefas dentro do Notion.</li>
+      <li><strong>ChatPDF:</strong> Leia e resuma qualquer PDF com IA.</li>
+      <li><strong>Reclaim.ai:</strong> Planejamento automático de agenda e tarefas.</li>
+    </ul>
 
-  <!-- Rodapé -->
-  <footer class="bg-blue-700 text-white text-center py-6">
-    <p>&copy; 2025 IA Central. Todos os direitos reservados.</p>
+    <h2>🗣️ Voz e Áudio</h2>
+    <ul>
+      <li><strong>ElevenLabs:</strong> Clonagem e geração de vozes realistas com IA.</li>
+      <li><strong>Voicemod AI:</strong> Mudança de voz em tempo real para streamers e criadores.</li>
+      <li><strong>Descript:</strong> Edição de áudio e vídeo por texto.</li>
+    </ul>
+
+    <h2>👀 Imagem e Vídeo</h2>
+    <ul>
+      <li><strong>D-ID:</strong> Criação de avatares que falam com sua voz.</li>
+      <li><strong>Pictory:</strong> Gera vídeos a partir de textos ou roteiros.</li>
+      <li><strong>CapCut AI:</strong> Edição automática com legendas, cortes e filtros.</li>
+    </ul>
+  </main>
+
+  <footer>
+    Feito por Scherrer com 💙 usando GitHub Pages e Inteligência Artificial
   </footer>
 
 </body>
